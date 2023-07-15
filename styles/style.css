@@ -87,6 +87,7 @@ nav ul li a:hover{
 }
 .col-1 h3{
     font-weight: 500;
+    font-size: 95%;
 }
 
 .col-2{
@@ -109,6 +110,10 @@ nav ul li a:hover{
 }
 .col-3 h3{
     font-weight: 500;
+}
+
+.timerDisplay{
+    color: aqua;
 }
 
 .losowanie{
@@ -135,7 +140,7 @@ nav ul li a:hover{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     border: 0;
     outline: none;
 }
@@ -168,6 +173,35 @@ nav ul li a:hover{
     font-size: 200%;
 }
 
+.dark-mode{
+    background-color: #373836;
+    color: white;
+}
+.darkmode{
+    cursor: pointer;
+    left: 48.8%;
+    width: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2%;
+    outline: none;
+    border: 0;
+    transition: all 0.3s;
+}
+.darkmode:hover{
+    animation: rotation2 1s infinite linear;
+    transition: all 0.3s;
+    width: 45px;
+}
+
+@keyframes rotation2{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
 
 @media only screen and (max-width:700px){
     nav ul{
@@ -197,7 +231,8 @@ nav ul li a:hover{
         display: none;
     }
     .col-3{
-        display: none;
+        position: absolute;
+        bottom: 10%;
     }
     .col-2{
         font-size: 75%;
@@ -209,4 +244,9 @@ nav ul li a:hover{
         top: 80%;
         left: 26.5%;
     }
+    .darkmode{
+        position: absolute;
+        left: 45.1%;
+    }
+
 }
