@@ -13,13 +13,11 @@ function togglemenu(){
 
 function startTimer() {
     var startTime;
-    var duration = 3 * 60 * 60 * 1000; // 3 hours in milliseconds
+    var duration = 3 * 60 * 60 * 1000;
 
-    // Sprawdź, czy czas początkowy jest już zapisany w pamięci lokalnej
     if (localStorage.getItem('startTime')) {
       startTime = parseInt(localStorage.getItem('startTime'));
     } else {
-      // Jeśli nie, ustaw czas początkowy na aktualny czas
       startTime = Date.now();
       localStorage.setItem('startTime', startTime.toString());
     }
@@ -42,19 +40,15 @@ function startTimer() {
       }
     }, 1000); // Odświeżaj co sekundę (1000 milisekund)
 
-    // Dodaj obsługę zdarzenia click dla przycisku reset
     var resetButton = document.getElementById('resetButton');
     resetButton.addEventListener('click', function() {
-      // Zresetuj czas początkowy w pamięci lokalnej
       startTime = Date.now();
       localStorage.setItem('startTime', startTime.toString());
     });
   }
 
-  // Start the timer when the page is loaded
   window.addEventListener('DOMContentLoaded', startTimer);
 
-// Lista przykładowych tekstów
 var przykladoweTeksty = [
     'Temat Szyszki',
     'Temat Jaspera',
@@ -94,10 +88,8 @@ var przykladoweTeksty = [
   ];
 
 
-    // Zbiór indeksów przykładowych tekstów
     var dostepneIndeksy = Array.from(Array(przykladoweTeksty.length).keys());
 
-    // Funkcja do losowania tekstu i wstawiania go w blok
     function losujTekst(element) {
       if (dostepneIndeksy.length === 0) {
         element.textContent = 'Brak dostępnych tekstów';
@@ -110,15 +102,12 @@ var przykladoweTeksty = [
       element.textContent = wylosowanyTekst;
     }
 
-    // Przywróć zapisany stan tekstów po otwarciu strony
     window.addEventListener('DOMContentLoaded', function() {
       var divItems = document.getElementsByClassName('item');
       Array.from(divItems).forEach(function(item) {
         losujTekst(item);
       });
     });
-
-    // Obsługa zdarzenia kliknięcia dla specjalnego przycisku resetowania losowania
     var resetButton = document.getElementById('resetButton');
     resetButton.addEventListener('click', function() {
       dostepneIndeksy = Array.from(Array(przykladoweTeksty.length).keys());
@@ -185,7 +174,6 @@ function checkWin() {
   resultElement.textContent = win ? "Wygrałeś!" : "";
 }
 
-// Przywróć zapisany stan po otwarciu strony
 window.addEventListener('DOMContentLoaded', function() {
   var divItems = document.getElementsByClassName('item');
   for (var i = 0; i < divItems.length; i++) {
