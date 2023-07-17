@@ -248,8 +248,7 @@ nav ul li a:hover{
         display: none;
     }
     .col-3{
-        position: absolute;
-        bottom: 10%;
+        display: none;
     }
     .col-2{
         font-size: 75%;
@@ -258,8 +257,9 @@ nav ul li a:hover{
     }
     #result{
         position: absolute;
+        margin-top: 170px;
         top: 80%;
-        left: 26.5%;
+        left: 23.5%;
     }
     .darkmode{
         position: absolute;

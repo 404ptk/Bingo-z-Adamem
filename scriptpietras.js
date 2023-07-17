@@ -1,6 +1,10 @@
+var resultElement = document.getElementById('result');
+var menuList = document.getElementById("menuList");
+var timerDisplay = document.getElementById('timerDisplay');
+var resetButton = document.getElementById('resetButton');
+var divItems = document.getElementsByClassName('item');
 
 //menu
-var menuList = document.getElementById("menuList");
 menuList.style.maxHeight = "0px";
 function togglemenu(){
     if(menuList.style.maxHeight == "0px"){
@@ -30,20 +34,17 @@ function startTimer() {
 
         if (remainingTime <= 0) {
             clearInterval(timerId);
-            var timerDisplay = document.getElementById('timerDisplay');
             timerDisplay.textContent = 'Koniec czasu!';
         } else {
             var hours = Math.floor(remainingTime / (1000 * 60 * 60));
             var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
-            var timerDisplay = document.getElementById('timerDisplay');
             timerDisplay.textContent =hours + 'h ' + minutes + 'm ' + seconds + 's';
         }
     }, 1000); //odswiezanie co sekunde
 
     //reset
-    var resetButton = document.getElementById('resetButton');
     resetButton.addEventListener('click', function() {
         //resetowanie czasu lokalnego
         startTime = Date.now();
@@ -70,11 +71,12 @@ var przykladoweTeksty = [
     'Narzekanie na zmęczenie',
     'Przekręcanie wiadomości z czatu',
     'Historia o mamusi',
-    'Coś mu nie działa',
+    'Ktoś nazywa rudego kakiem w donejcie',
     'Donejt za więcej niż 1zł',
     'Mizianie się po łepytynie',
     'Jakiś debil dał suba',
     'Temat minutki',
+    'Wyzywanie rudego',
     'Cwel/Pedał z ust Pietrasa',
     'Gadka o Patiro',
     'IRL',
@@ -110,18 +112,15 @@ var przykladoweTeksty = [
 
     //przywrocenie zapisanego stanu tekstow po otwarciu strony
     window.addEventListener('DOMContentLoaded', function() {
-        var divItems = document.getElementsByClassName('item');
         Array.from(divItems).forEach(function(item) {
             losujTekst(item);
         });
     });
 
     //reset losowania
-    var resetButton = document.getElementById('resetButton');
     resetButton.addEventListener('click', function() {
         dostepneIndeksy = Array.from(Array(przykladoweTeksty.length).keys());
-
-        var divItems = document.getElementsByClassName('item');
+        resultElement.textContent ="";
         Array.from(divItems).forEach(function(item) {
             losujTekst(item);
         });
@@ -145,7 +144,6 @@ function main(element) {
 }
 
 function checkWin() {
-    var divItems = document.getElementsByClassName('item');
     rows = [];
     columns = [];
     diagonal = 0;
@@ -179,13 +177,11 @@ function checkWin() {
 
     var win = rows.includes(true) || columns.includes(true) || !diagonal || !antiDiagonal;
 
-    var resultElement = document.getElementById('result');
     resultElement.textContent = win ? "Wygrałeś!" : "";
 }
 
 // Przywróć zapisany stan po otwarciu strony
 window.addEventListener('DOMContentLoaded', function() {
-    var divItems = document.getElementsByClassName('item');
     for (var i = 0; i < divItems.length; i++) {
         if (divItems[i].style.backgroundColor === "rgb(166, 245, 189)") {
         divItems[i].click();
