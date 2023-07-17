@@ -108,6 +108,7 @@ var przykladoweTeksty = [
         var wylosowanyIndeks = dostepneIndeksy.splice(losowyIndeks, 1)[0];
         var wylosowanyTekst = przykladoweTeksty[wylosowanyIndeks];
         element.textContent = wylosowanyTekst;
+        element.style.backgroundColor = "white";
     }
 
     //przywrocenie zapisanego stanu tekstow po otwarciu strony

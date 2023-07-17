@@ -70,12 +70,11 @@ var przykladoweTeksty = [
     'Narzekanie na zmęczenie',
     'Przekręcanie wiadomości z czatu',
     'Historia o mamusi',
-    'Ktoś nazywa rudego kakiem w donejcie',
+    'Coś mu nie działa',
     'Donejt za więcej niż 1zł',
     'Mizianie się po łepytynie',
     'Jakiś debil dał suba',
     'Temat minutki',
-    'Wyzywanie rudego',
     'Cwel/Pedał z ust Pietrasa',
     'Gadka o Patiro',
     'IRL',
@@ -106,6 +105,7 @@ var przykladoweTeksty = [
         var wylosowanyIndeks = dostepneIndeksy.splice(losowyIndeks, 1)[0];
         var wylosowanyTekst = przykladoweTeksty[wylosowanyIndeks];
         element.textContent = wylosowanyTekst;
+        element.style.backgroundColor = "white";
     }
 
     //przywrocenie zapisanego stanu tekstow po otwarciu strony
