@@ -89,7 +89,11 @@ var przykladoweTeksty = [
     'Znowu nudy jebane na strimie',
     'kac moment',
     'Coś o czarnuchach na strimie',
-    'Wpierdalanie na strimie'
+    'Wpierdalanie na strimie',
+    'Trzęsienie tyłkiem',
+    'Stary pietras vibes',
+    'Pietras przez trzy "s" jak twoja suka',
+    'Pompeczka'
 ];
 
 
