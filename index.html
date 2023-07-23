@@ -4,69 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logoadamcy.jpg">
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="styles/style.css">
     <script src="script.js"></script>
-    <title>BINGO!</title>
+    <title>Citynet Rzeszów - Internet, telewizja, telefon</title>
 </head>
 <body>
     <script src="script.js"></script>
     <div class="container">
         <div class="navbar">
-            <img src="images/logo.jpg" alt="logo" class="logo">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <p class="logo-tekst">Internet<br>Telewizja<br>Telefon</p>
+            <p class="tel">Citynet Marcin Sobala, Piotr Misiuda<br>35-328 Rzeszów, ul. Popiełuszki 22/7<br>tel. 17 250 93 00, kom. 692 461 210, kom. 606 630 644<br>e-mail: info@citynet.rzeszow.pl</p>
             <nav>
                 <ul id="menuList">
-                    <li><a href="https://github.com/utopiasz" target="_blank">Github</a></li>
-                    <li><a href="https://kick.com/utopiasz" target="_blank">Kick</a></li>
-                    <li><a href="">Kontakt</a></li>
+                    <li><a href="aktualnosci.html">Aktualnosci</a></li>
+                    <li><a href="nasza_firma.html">Nasza firma</a></li>
+                    <li><a class="aktualna">Internet Telewizja Telefon</a></li>
+                    <li><a href="pomoc_techniczna.html">Pomoc techniczna</a></li>
+                    <li><a href="moje_konto.html">Moje konto</a></li>
                 </ul>
             </nav>
             <img src="images/menu.png" alt="menu" class="menu-icon" onclick="togglemenu()">
         </div>
-        <div class="adamcy">
-            <img src="images/logoadamcy.jpg" alt="logoadamcy" class="logoadamcy">
-            <h2>Bingo z rudzielcem</h2>
-            <a href="pietrasbingo.html"><h4>Zmień na bingo z Pietrasem!</h4></a>
-        </div>
         <div class="row">
-            <div class="col-1">
-                <h2>Zrób wszystko żeby wygrać!</h2>
-                <h3>Zasady są proste, wystarczy że Adam poruszy temat twojego binga.</h3>
-                <h3>Baituj go na czacie, aby wypowiadał się na dane tematy i zaznaczaj te, które poruszył!</h3>
-                <h3>Wygrana jest wtedy, gdy zaznaczysz wszystkie odpowiedzi w jednym z wierszów, kolumn, lub na ukos</h3>
-            </div>
-            <div class="col-2">
-                <div class="item items-1" id="divItem" onclick="main(this)"></div>
-                <div class="item items-2" id="divItem"onclick="main(this)"></div>
-                <div class="item items-3" id="divItem"onclick="main(this)"></div>
-                <div class="item items-4" id="divItem"onclick="main(this)"></div>
-                <div class="item items-5" id="divItem"onclick="main(this)"></div>
-                <div class="item items-6" id="divItem"onclick="main(this)"></div>
-                <div class="item items-7" id="divItem"onclick="main(this)"></div>
-                <div class="item items-8" id="divItem"onclick="main(this)"></div>
-                <div class="item items-9" id="divItem"onclick="main(this)"></div>
-                <div class="item items-10" id="divItem"onclick="main(this)"></div>
-                <div class="item items-11" id="divItem"onclick="main(this)"></div>
-                <div class="item items-12" id="divItem"onclick="main(this)"></div>
-                <div class="item items-13" id="divItem"onclick="main(this)"></div>
-                <div class="item items-14" id="divItem"onclick="main(this)"></div>
-                <div class="item items-15" id="divItem"onclick="main(this)"></div>
-                <div class="item items-16" id="divItem"onclick="main(this)"></div>
-            </div>
-            <div class="col-3">
-                <h2>Zostało ci:</h2>
-                <div id="timerDisplay">2h 59m 59s</div>
-                <h3>Na skompletowanie binga!</h3>
-            </div>
-        </div>
-        <div class="losowanie">
-            Wylosuj nowe bingo!
-        </div>
-        <button id="resetButton" type="button" class="buttonrefresh"><img src="images/refresh.png" alt="refresh" class="refresh"></button>
-        <p id="result"></p>
-    </div>
-    <button onclick="darkMode()"><img src="images/moon.png" alt="księżyc" class="darkmode"></button>
+            <img src="/images//linka2.png" class="linia">
+            <div class="col1">
+                <div class="dolacz">SKORZYSTAJ Z TECHNOLOGII PRZYSZŁOŚCI</div>
+                <img src="/images/wifiwhite.png" alt="wifi" class="wifi">
+                <p class="dolacz2">WYBIERZ SWÓJ PAKIET:</p>
 
+            </div>
+            <div class="col2">
+                <a href="moje_konto.html"><img src="images/mini.jpg" alt="mini"></a>
+                <a href="moje_konto.html"><img src="images/midi.jpg" alt="midi"></a>
+                <a href="moje_konto.html"><img src="images/standard.jpg" alt="standard"></a>
+            </div>
+            <div class="col3">
+                <img src="/images/zasieg.png" alt="zasiegmapa" class="mapa">
+                <h2>Zasięg działania <br>sieci Citynet</h2>
+                    <p>Cegielniana, Kurpiowska, Małopolska,<br>Nowe Miasto, Olbrachta, Paderewskiego,<br> 
+                    Powstańców Warszawy "Nasz Gaj", Sikorskiego, Strażacka,<br> Św. Kingi, Zaciszna i inne.</p>
+            </div>
+        </div>
+        <div class="predkosci">
+            <div class="wielorodzinny">
+                <h2>Internet</h2>
+                <h4>Budynki wielorodzinne</h4>
+                <table>
+                    <tr>
+                        <th>Pakiet</th>
+                        <th>Prędkość pobierania</th>
+                        <th>Prędkość wysyłania</th>
+                        <th>Cena brutto</th>
+                    </tr>
+                    <tr>
+                        <td>Standard</td>
+                        <td>700 Mbit/s</td>
+                        <td>300 Mbit/s</td>
+                        <td>49,2 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>300 Mbit/s</td>
+                        <td>100 Mbit/s</td>
+                        <td>36,9 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Mini</td>
+                        <td>50 Mbit/s</td>
+                        <td>5 Mbit/s</td>
+                        <td>24,6 zł</td>
+                    </tr>
+                </table>
+                <div class="informacje">
+                    <ul>
+                        <li>Zawsze podajemy prędkości minimalne (gwarantowane przy połączeniu przewodowym)</li>
+                        <li>Podawane prędkości mogą być do 10% wyższe</li>
+                        <li>Niskie czasy dostępu - NISKIE PINGI</li>
+                        <li>Podłączenie do Internetu: brak opłaty</li>
+                        <li>Umowa zawierana jest na czas okreslony lub czas nieokreślony (miesięczny termin wypowiedzenia)</li>
+                        <li>Możliwość bezpłatnego zawieszenia/wznowienia umowy (przy umowie na czas nieokreślony)</li>
+                        <li>Użytkownik otrzymuje pierwszy miesiąc gratis (przy pierwszym podłączeniu w danym lokalu)</li>
+                        <li>Istnieje możliwość zakupu zewnętrznego adresu IP - koszt adresu to 6,15 zł brutto/miesięcznie</li>
+                        <li>Dla pakietu Standard i Medium zalecany jest router Wi-Fi pracujący w trybie AC lub AX (aby uzyskać prędkość powyżej 100 Mbit/s przewodowo - router gigabitowy)</li>
+                        <li>Opłata za ponowną konfigurację routera: 50 zł brutto (konfiguracja routera podczas pierwszego uruchomienia Internetu w lokalu jest bezpłatna)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jednorodzinny">
+                <h2>Internet NOWOŚĆ</h2>
+                <h4>Światłowód dla domów jednorodzinnych i szeregówek</h4>
+                <table>
+                    <tr>
+                        <th>Pakiet</th>
+                        <th>Prędkość pobierania</th>
+                        <th>Prędkość wysyłania</th>
+                        <th>Cena brutto</th>
+                        <th>Koszt podłączenia brutto</th>
+                    </tr>
+                    <tr>
+                        <td>Standard</td>
+                        <td>700 Mbit/s</td>
+                        <td>300 Mbit/s</td>
+                        <td>49,2 zł</td>
+                        <td>100zł</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>300 Mbit/s</td>
+                        <td>100 Mbit/s</td>
+                        <td>36,9 zł</td>
+                        <td>100zł</td>
+                    </tr>
+                </table>
+                <div class="informacje">
+                    <ul>
+                        <li>Umowa na 24 miesiące</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col3">
+            </div>
+            
+            <div class="col4">
+
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>

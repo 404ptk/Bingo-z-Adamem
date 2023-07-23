@@ -1,28 +1,43 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 .container{
+    background: linear-gradient(-45deg,#00d5fc,#046af6);
     width: 100%;
     min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: -1;
 }
 .navbar{
     width: 100%;
     display: flex;
     align-items: center;
+    background-image: url(/images//background.jpg);
 }
 .logo{
-    width: 50px;
-    cursor: pointer;
-    margin: 10px 0;
-    border-radius: 30px;
+    width: 80px;
+    margin: 10px 10px;
+}
+.logo-tekst{
+    cursor: default;
+    color: rgb(146, 218, 240);
+    text-align: center;
+    display: block;
+}
+.tel{
+    margin-left: 20px;
+    color: white;
+    font-size: 80%;
 }
 nav{
+    right: 0;
+    top: 40px;
+    position: absolute;
     flex: 1;
     text-align: right;
 }
@@ -33,139 +48,164 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: black;
-    font-size: 14px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.2s;
 }
 nav ul li a:hover{
-    color: greenyellow;
+    transition: all 0.2s;
+    color: rgb(85, 85, 85);
 }
 .menu-icon{
     width: 25px;
     cursor: pointer;
     display: none;
 }
-.logoadamcy{
-    width: 80px;
-    border-radius: 40px;
-}
-.adamcy{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
+.aktualna{
+    text-decoration:underline;
     cursor: default;
-    margin-bottom: 0px;
+    color: rgb(35, 195, 223);
 }
-.adamcy h4{
-    margin-top: 10px;
-    color: grey;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
+.aktualna:hover{
+    color: rgb(35, 195, 223);
 }
-.adamcy a{
-    text-decoration: none;
+.test{
+    margin-top: 1000px;
 }
-.adamcy h4:hover{
-    text-decoration: none;
-    transition: all 0.2s;
-    color: #373836;
+.dolacz{
+    cursor: default;
+    margin-top: 50px;
+    font-size: 250%;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+    filter: drop-shadow(0px 0px 1px black);
+}
+.dolacz2{
+    cursor: default;
+    margin-top: 20px;
+    font-size: 250%;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+    filter: drop-shadow(0px 0px 1px black);
+}
+.dolacz:hover{
+    transition: all 0.5s;
     letter-spacing: 2px;
 }
-
-.item{
-    color: black;
-    display: flex;
-    justify-content: center;
+.row .col2{
+    padding: 20px;
     align-items: center;
-    user-select: none;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 7px rgb(131, 147, 236);
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-    transition: all 0.5s;
-}
-.item:hover{
-    background-color: rgba(0, 128, 0, 0.226);
-}
-
-.row{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
-
-.col-1{
-    cursor: default;
-    width: 400px;
-    text-align: center;
+.col2 img{
+    filter: drop-shadow(0px 0px 5px white);
+    transition: all 0.2s;
 }
-.col-1 h3{
-    font-weight: 500;
-    font-size: 95%;
-}
-
-.col-2{
-    justify-content: center;
-    margin-top: 20px;
-    display: grid;
-    height: 80%;
-    grid-template-columns: 140px 140px 140px 140px;
-    grid-template-rows: 140px 140px 140px 140px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.col-3{
-    cursor: default;
-    width: 400px;
-    text-align: center;
-}
-.col-3 h3{
-    font-weight: 500;
-}
-
-.timerDisplay{
-    color: aqua;
-}
-
-.losowanie{
-    font-weight: 600;
-    cursor: default;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-.refresh{
-    outline: none;
+.col2 img:hover{
     cursor: pointer;
-    display: flex;
+    transition: all 0.2s;
+    filter: drop-shadow(0px 0px 50px white);
+}
+
+.row .col3{
+    color: white;
+    font-size: 200%;
+    padding: 20px;
     align-items: center;
-    width: 35px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col1 .wifi{
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    transition: all 0.3s;
-    border: 0;
+    width: 200px;
+    filter: drop-shadow(0px 0px 4px white);
+    transition: all 0.5s;
 }
-.buttonrefresh{
-    display: flex;
-    align-items: center;
+.col1 .wifi:hover{
+    transition: all 0.5s;
+    filter: drop-shadow(0px 0px 9px white);
+}
+
+.col3{
+    z-index: 1;
+    filter: drop-shadow(0px 0px 1px white);
+    margin-top: 50px;
+}
+.col3 p,h2{
+    text-align: center;
+}
+.col3 p{
+    font-size: 60%;
+}
+.col3 h2{
+    cursor: default;
+}
+.col3 img{
+    filter: drop-shadow(0px 0px 9px white);
+}
+.linia{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    z-index: 0;
+}
+.predkosci{
+    margin-top: 70px;
+    border-radius: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: rgb(247, 245, 245);
+}
+.predkosci ul li{
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin-right: 30px;
+}
+.wielorodzinny{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.jednorodzinny{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+table{
+    padding: 20px;
+    cursor: default;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(255, 255, 255, 0);
-    border: 0;
-    outline: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    filter: drop-shadow(0px 0px 30px white);
 }
-.refresh:hover{
-    animation: rotation 2s infinite linear;
-    transition: all 0.3s;
-    width: 40px;
+
+table th{
+    font-size: 100%;
 }
+
+table td{
+    font-size: 50%;
+}
+table td{
+    background-color: #c8eaf0;
+}
+
 @keyframes rotation{
     from {
         transform: rotate(0deg);
@@ -174,53 +214,10 @@ nav ul li a:hover{
         transform: rotate(359deg);
     }
 }
-
-#result{
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    display: flex;
-    height: 80px;
-    width: 200px;
-    text-align: center;
-    border-radius: 50px;
-    top: 30%;
-    right: 16%;
-    position: absolute;
-    font-size: 200%;
-}
-
-.dark-mode{
-    background-color: #373836;
-    color: white;
-}
-.darkmode{
-    cursor: pointer;
-    left: 48.8%;
-    width: 40px;
-    border-radius: 10px;
-    position: absolute;
-    top: 2%;
-    outline: none;
-    border: 0;
-    transition: all 0.3s;
-}
-.darkmode:hover{
-    animation: rotation2 1s infinite linear;
-    transition: all 0.3s;
-    width: 45px;
-}
-
-@keyframes rotation2{
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-}
-
 @media only screen and (max-width:700px){
+    nav{
+        position: relative;
+    }
     nav ul{
         margin-top: 10px;
         width: 100%;
@@ -244,26 +241,45 @@ nav ul li a:hover{
         overflow: hidden;
         transition: 0.5s;
     }
-    .col-1{
+    .logo{
+        margin-left: 20px;
+        width: 60px;
+    }
+    .logo-tekst{
         display: none;
     }
-    .col-3{
+    .tel{
+        font-size: 50%;
+        text-align: center;
+      }
+    .menu-icon{
+        width: 50px;
+        margin-right: 10px;
+    }
+    .col1 .dolacz{
+        font-size: 100%;
+    }
+    .col1 .wifi{
+        width: 150px;
+    }
+    .col1 .dolacz2{
+        font-size: 100%;
+    }
+    .col2 img{
+        width: 120px;
+    }
+    .row .col3{
+        color: white;
+        font-size: 100%;
+        padding: 20px;
+        display: flex;
+    }
+    .col3 img{
+        width: 350px;
+    }
+}
+@media only screen and (max-width:900px){
+    .logo-tekst{
         display: none;
-    }
-    .col-2{
-        font-size: 75%;
-        grid-template-columns: 90px 90px 90px 90px;
-        grid-template-rows: 90px 90px 90px 90px;
-    }
-    #result{
-        position: absolute;
-        margin-top: 170px;
-        top: 80%;
-        left: 23.5%;
-    }
-    .darkmode{
-        position: absolute;
-        left: 45.1%;
-    }
-
+    } 
 }
