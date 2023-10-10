@@ -60,10 +60,10 @@ var przykladoweTeksty = [
     'Temat Szyszki',
     'Temat Jaspera',
     'Temat ćpania',
-    'Pedał/Cwel z ust Adama',
-    'Kutas na strimie',
+    'P*dał/Cw*l z ust Adama',
+    'Kut*s na strimie',
     'Linki',
-    'Pierdolenie o swojej masie ciała',
+    'Pi*rdolenie o swojej masie ciała',
     'Ome',
     'Spam pepeW na czacie',
     'Fajeczka',
@@ -76,7 +76,7 @@ var przykladoweTeksty = [
     'Temat Jakubixa',
     'Jakiś debil dał suba',
     'Pierdolenie o Kanadzie',
-    'Rudy się opierdala',
+    'Rudy się opi*rdala',
     'Temat cuckoldostwa',
     'Gadka o Patiro',
     'Weronika Malik (100kg bestia z Warszawy)',
@@ -91,7 +91,7 @@ var przykladoweTeksty = [
     'Perm widza',
     'Adam został pociśnięty w donejcie',
     'Robienie kontentu na pietrasie',
-    'Wpierdalanie na strimie'
+    'Wpi*rdalanie na strimie'
 ];
 
 
